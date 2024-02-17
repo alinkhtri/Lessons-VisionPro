@@ -11,7 +11,8 @@ import SwiftUI
 struct LessonsVideoPlayerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LessonsListView()
         }
+        .windowResizability(.contentMinSize)
     }
 }

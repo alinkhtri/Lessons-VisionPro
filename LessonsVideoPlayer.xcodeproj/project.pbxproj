@@ -9,19 +9,29 @@
 /* Begin PBXBuildFile section */
 		E140EE342B6177FD00A9D714 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = E140EE332B6177FD00A9D714 /* RealityKitContent */; };
 		E140EE362B6177FD00A9D714 /* LessonsVideoPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140EE352B6177FD00A9D714 /* LessonsVideoPlayerApp.swift */; };
-		E140EE382B6177FD00A9D714 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140EE372B6177FD00A9D714 /* ContentView.swift */; };
+		E140EE382B6177FD00A9D714 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140EE372B6177FD00A9D714 /* VideoPlayerView.swift */; };
 		E140EE3A2B6177FE00A9D714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E140EE392B6177FE00A9D714 /* Assets.xcassets */; };
 		E140EE3D2B6177FE00A9D714 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E140EE3C2B6177FE00A9D714 /* Preview Assets.xcassets */; };
+		E140EE462B6183EE00A9D714 /* LessonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140EE452B6183EE00A9D714 /* LessonsModel.swift */; };
+		E140EE482B61840800A9D714 /* LessonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140EE472B61840800A9D714 /* LessonsViewModel.swift */; };
+		E140EE4B2B61849500A9D714 /* LError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140EE4A2B61849500A9D714 /* LError.swift */; };
+		E140EE4D2B6184B000A9D714 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140EE4C2B6184B000A9D714 /* NetworkManager.swift */; };
+		E140EE502B61852300A9D714 /* LessonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E140EE4F2B61852300A9D714 /* LessonsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E140EE2E2B6177FD00A9D714 /* LessonsVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonsVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E140EE322B6177FD00A9D714 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		E140EE352B6177FD00A9D714 /* LessonsVideoPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsVideoPlayerApp.swift; sourceTree = "<group>"; };
-		E140EE372B6177FD00A9D714 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E140EE372B6177FD00A9D714 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		E140EE392B6177FE00A9D714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E140EE3C2B6177FE00A9D714 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E140EE3E2B6177FE00A9D714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E140EE452B6183EE00A9D714 /* LessonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsModel.swift; sourceTree = "<group>"; };
+		E140EE472B61840800A9D714 /* LessonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewModel.swift; sourceTree = "<group>"; };
+		E140EE4A2B61849500A9D714 /* LError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LError.swift; sourceTree = "<group>"; };
+		E140EE4C2B6184B000A9D714 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E140EE4F2B61852300A9D714 /* LessonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,10 @@
 		E140EE302B6177FD00A9D714 /* LessonsVideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				E140EE492B61845D00A9D714 /* Networking */,
+				E140EE442B6183BB00A9D714 /* Application */,
 				E140EE352B6177FD00A9D714 /* LessonsVideoPlayerApp.swift */,
-				E140EE372B6177FD00A9D714 /* ContentView.swift */,
+				E140EE372B6177FD00A9D714 /* VideoPlayerView.swift */,
 				E140EE392B6177FE00A9D714 /* Assets.xcassets */,
 				E140EE3E2B6177FE00A9D714 /* Info.plist */,
 				E140EE3B2B6177FE00A9D714 /* Preview Content */,
@@ -79,6 +91,33 @@
 				E140EE3C2B6177FE00A9D714 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E140EE442B6183BB00A9D714 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E140EE4E2B61851000A9D714 /* Views */,
+				E140EE452B6183EE00A9D714 /* LessonsModel.swift */,
+				E140EE472B61840800A9D714 /* LessonsViewModel.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E140EE492B61845D00A9D714 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E140EE4A2B61849500A9D714 /* LError.swift */,
+				E140EE4C2B6184B000A9D714 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E140EE4E2B61851000A9D714 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E140EE4F2B61852300A9D714 /* LessonsListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E140EE382B6177FD00A9D714 /* ContentView.swift in Sources */,
+				E140EE4D2B6184B000A9D714 /* NetworkManager.swift in Sources */,
+				E140EE482B61840800A9D714 /* LessonsViewModel.swift in Sources */,
+				E140EE462B6183EE00A9D714 /* LessonsModel.swift in Sources */,
+				E140EE382B6177FD00A9D714 /* VideoPlayerView.swift in Sources */,
+				E140EE4B2B61849500A9D714 /* LError.swift in Sources */,
+				E140EE502B61852300A9D714 /* LessonsListView.swift in Sources */,
 				E140EE362B6177FD00A9D714 /* LessonsVideoPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
